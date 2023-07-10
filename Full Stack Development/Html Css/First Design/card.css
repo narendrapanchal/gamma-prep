@@ -1,0 +1,121 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   background-color: white;
+   border-radius: 16px;
+}
+body{
+ background-color: antiquewhite;   
+}
+ *,p {
+    margin: 20px 0px 0px 0px;
+    padding: 0px; 
+}
+.card p{
+    color: gray;
+}
+.card >div> p:nth-child(1){
+    margin: 0px;
+}
+.card >div>div button img {
+    height: 24px;
+    width: 24px;
+}
+.card >div>img{
+    display: none;
+  }
+  .card>div:nth-child(2){
+    padding: 20px;
+  }
+
+.card >div:nth-child(2)>p:nth-child(1){
+    padding-top: 20px;
+}
+.card >div:nth-child(2)>div>button{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+padding: 10px;
+border: none;
+grid-gap: 10px;
+color: white;
+background-color: #0B666A;
+background: #0B666A;
+border-radius: 8px;
+font-weight: bold;
+width: 100%;
+cursor: pointer;
+}
+.card >div:nth-child(2)>p{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+.card >div:nth-child(2)>p>span:nth-child(2){
+    text-decoration: line-through;
+}
+
+.card >div:nth-child(2)>p>span:nth-child(1){
+    font-size: 32px;
+    font-weight: bold;
+    color: #0B666A;
+
+}
+.card >div:nth-child(2)>div>button *{
+margin: 0px;
+width: max-content;
+}
+.card >div:nth-child(2)>div>button:hover{
+    background-color: #35A29F;
+    background: #35A29F;
+
+  }
+  @media (min-width:720px) {
+    .card{
+      flex-direction: row;
+      width: min-content;
+    }  
+    .card >div{
+      margin: 0px;
+    }
+    .card >div >img:nth-child(1){
+      display: block;
+      width: 300px;
+      object-fit: scale-down;
+      border-radius: 16px 0px 0px 16px;
+      margin-top: 0px;
+  
+    }
+    .card >div{
+      width: 300px;
+    } 
+    
+  
+  }
+@media (max-width:719px){
+    .card>div >img:nth-child(2){
+        display: block;
+        width: 100%;
+        object-fit: scale-down;
+        margin: 0px;
+        border-radius: 16px 16px 0px 0px;
+      }
+      .card>div:nth-child(2){
+        margin: 0px;
+        padding: 0px 16px 0px;
+        padding-bottom: 20px;
+
+      }
+      .card>div {
+        margin: 0px;
+      }
+      body{
+        margin: 0px;
+        padding: 20px;
+      }
+      html{
+        margin: 0px;
+      }
+}
